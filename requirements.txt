@@ -1,0 +1,8 @@
+numpy
+pandas
+optimparallel
+pandas_datareader
+matplotlib
+requests_cache
+cufflinks
+numba
