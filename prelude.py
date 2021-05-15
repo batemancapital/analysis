@@ -111,19 +111,23 @@ def plot_qe(ax, leftmost):
         qe2_end = datetime.datetime(2011, 9, 21)
         draw_span(ax, qe2_start, qe2_end, leftmost,
                   color='tab:orange', alpha=0.3)
-        twist_start = datetime.datetime(2011, 9, 21)
-        twist_end = datetime.datetime(2012, 6, 29)
-        draw_span(ax, twist_start, twist_end, leftmost,
-                  color='tab:olive', alpha=0.3)
+        #twist_start = datetime.datetime(2011, 9, 21)
+        #twist_end = datetime.datetime(2012, 6, 29)
+        #draw_span(ax, twist_start, twist_end, leftmost,
+        #          color='tab:olive', alpha=0.3)
         qe3_start = datetime.datetime(2012, 9, 13)
         qe3_end = datetime.datetime(2013, 12, 18)
         draw_span(ax, qe3_start, qe3_end, leftmost,
                   color='tab:orange', alpha=0.3)
-        taper_start = datetime.datetime(2013, 12, 18)
-        taper_end = datetime.datetime(2014, 10, 29)
-        draw_span(ax, taper_start, taper_end, leftmost,
-                  color='tab:pink', alpha=0.3)
-        plt.text(0, -0.20, "Shaded color areas indicate Fed QE program - QE(orange), Twist(olive), Taper(pink)",
+        #taper_start = datetime.datetime(2013, 12, 18)
+        #taper_end = datetime.datetime(2014, 10, 29)
+        #draw_span(ax, taper_start, taper_end, leftmost,
+        #          color='tab:pink', alpha=0.3)
+        qe4_start = datetime.datetime(2020, 3, 11)
+        qe4_end = datetime.datetime.today()
+        draw_span(ax, qe4_start, qe4_end, leftmost,
+                  color='tab:orange', alpha=0.3)
+        plt.text(0, -0.15, "Shaded color areas indicate major Fed QE programs - Twist and Tapering ignored",
                  horizontalalignment='left',
                  verticalalignment='center',
                  fontsize=14,
